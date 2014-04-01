@@ -1,0 +1,63 @@
+@import "variables";
+@import "bootstrap";
+
+html, body {
+	font-family: $lucida;
+}
+footer {
+	min-height:150px;
+	background: #333;
+	color: $ice;
+	.container {
+		padding-top: 20px;
+	}
+}
+
+// Sections
+.main-section {
+	min-height: 375px;
+	background-position: center center;
+	width:100%;
+	@include box-sizing(border-box);
+	position:relative;
+}
+#home {
+	@extend .main-section;
+	min-height:325px;
+	background: url(banner.jpg);
+	background-size:100%;
+	color: #fff;
+	margin: auto;
+	center {
+		margin-top: 90px;
+	}
+}
+#services {
+	@extend .main-section;
+}
+#services-dropdown {
+	@extend .main-section;
+	display:none;
+	background: #222;
+	img {
+		height:375px;
+		text-align:center;
+	}
+}
+#about {
+	@extend .main-section;
+	background: $green;
+	color: $ice;
+}
+#contact {
+	@extend .main-section;
+	min-height: 325px;
+}
+
+// buttons
+
+.default {
+	@extend .btn;
+	@extend .btn-default;
+}
+

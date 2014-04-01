@@ -1,0 +1,93 @@
+<section id="home">
+	<div class="container">
+		<center>
+			<h1>Wild Macaron Media</h1>
+			<%= link_to "Action", "#", class: "default" %>
+		</center>	
+	</div>	
+</section>
+
+<section id="services">
+	<div class="container copy">
+		<center>
+		<h1 class="page-header">We write totally awesome editorial</h1><p></p>
+		</center>
+		<div class="bs-docs-section">	
+			<div class="row bs-downloads" style="margin-bottom: 20px;">
+				<div class="col-sm-4">
+					<center>
+					<i class="fa fa-files-o xl"></i>
+					<h3 id="download-bootstrap">Web Copy</h3>
+					<p>Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included.</p>
+					<%= link_to "Copy me", '#', class: "btn btn-default btn-large", data: { slide: 0 } %>
+					</center>
+				</div>
+				<div class="col-sm-4">
+					<center><i class="fa fa-comment xl"></i>
+					<h3 id="download-source">Social Media</h3>
+					<p>Source Less, JavaScript, and font files, along with our docs. Requires a Less compiler and setup.</p>
+					<%= link_to "Hit me up", '#', class: "btn btn-default btn-large", data: { slide: 1 } %>
+					</center>
+				</div>
+				<div class="col-sm-4">
+					<center><i class="fa fa-tablet xl"></i>
+					<h3 id="download-sass">Digital Magazines</h3>
+					<p><a href="#">Bootstrap ported from Less to Sass</a> for easy inclusion in Rails, Compass, or Sass-only projects.</p>
+					<%= link_to "Dazzle me", '#', class: "btn btn-default btn-large", data: { slide: 2 } %>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<section id="services-dropdown">
+	<%= render partial: "shared/services" %>
+</section>	
+
+<section id="about">
+	<div class="container">
+		<center>
+			<h1 class="page-header">About us</h1>
+			<p>Aliquam sed felis sit amet dui accumsan dictum ut egestas justo. Nulla vulputate ante velit, sit amet egestas velit elementum at.</p>
+			<p>Vivamus pharetra volutpat diam, id eleifend nunc egestas a. Praesent ultrices, eros ut egestas interdum, enim dolor</p>
+			<p><%= link_to "click here for social stuff", "#", class: "default page-header" %></p>
+		</center>	
+	</div>	
+</section>
+
+<section id="contact">
+	<div class="container">
+
+	<div class="row" style="margin-top:20px">
+	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+			<form role="form">
+				<fieldset>
+					<h2>Call us maybe</h2>
+					<hr class="colorgraph">
+					<div class="form-group">
+	                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
+					</div>
+					<div class="form-group">
+	                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Query">
+					</div>
+					<span class="button-checkbox">
+						<button type="button" class="btn" data-color="info">Remember Me</button>
+	                    <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+					</span>
+					<hr class="colorgraph">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6">
+	                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<a href="" class="btn btn-lg btn-primary btn-block">Register</a>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	</div><br><br>
+</section>	
