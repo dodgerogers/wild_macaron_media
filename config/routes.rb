@@ -1,11 +1,14 @@
 WildMacaron::Application.routes.draw do
   devise_for :users, skip: [:registrations]
   as :user do
-    get 'users/edit', to: 'devise/registrations#edit', as: 'edit_user_registration'
-    put 'users', to: 'devise/registrations#update', as: 'user_registration'
+    get 'users/edit', to: 'devise/registrations#edit', as: :edit_user_registration
+    put 'users', to: 'devise/registrations#update', as: :user_registration
   end
   
   resources :users, only: [:index, :destroy, :create, :new]
+  resources :enquiries do
+    member { put :replied }
+  end
   
   root to: "pages#home"
   

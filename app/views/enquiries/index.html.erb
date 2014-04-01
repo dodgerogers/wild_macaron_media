@@ -1,0 +1,22 @@
+<h1>Listing enquiries</h2>
+<hr class="colorgraph">
+<p>All enquiries are sent primarily through email</p>
+
+<table class="table">
+	<tr>
+		<td>Name</td>
+		<td>Email</td>
+		<td>Received</td>
+		<td></td>
+	</tr>	
+	<% @enquiries.each do |enq| %>
+		<tr id="<%= enq.id %>">
+			<td><%= enq.name %></td>
+			<td><%= link_to enq.email %></td>
+			<td><%= time_ago_in_words enq.created_at %></td>
+			<td>
+				<%= link_to "View", enq, class: "default" %>
+				<%= link_to "Delete", enq, class: "default", method: :delete, remote: true, confirm: "Are you sure?" %></td>
+		</tr>
+	<% end %>	
+</table>

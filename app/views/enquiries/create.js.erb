@@ -1,0 +1,12 @@
+var enq = $("#new_enquiry");
+$(".errors").html("");
+
+<% if @enquiry.new_record? %>
+	$("<p class='errors red'><%= j @enquiry.errors.full_messages.join(', ').html_safe %></p>").insertAfter(enq.find("h2"));
+<% else %>
+	enq.find("section#fields").fadeOut(function(){
+		enq.find(".btn").hide();
+		enq.find("h2").text("Message sent <%= @enquiry.name %>!");
+		$( "<p><i class='fa fa-check-circle green'></i> Your message was recieved. We'll be in touch shortly</p>" ).insertAfter( ".colorgraph:eq(0)" );
+	});
+<% end %>

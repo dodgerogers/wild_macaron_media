@@ -19,6 +19,10 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   config.include Capybara::DSL
   config.include Devise::TestHelpers, type: :controller
+  
+  config.before(:each) do
+    EnquiryMailer.any_instance.stub(:send_message)
+  end
 
 
   # ## Mock Framework

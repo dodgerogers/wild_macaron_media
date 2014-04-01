@@ -53,6 +53,7 @@ group :development, :test do
   gem "shoulda-matchers", require: false
 end
 
+gem "delayed_job_active_record"
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem "whenever", require: false

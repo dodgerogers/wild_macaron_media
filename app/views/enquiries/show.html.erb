@@ -1,0 +1,13 @@
+<h2>Enquiry</h2>
+<hr class="colorgraph">
+
+<p><%= @enquiry.name %></p>
+
+<p><%= @enquiry.email %></p>
+
+<p><%= @enquiry.message %></p>
+
+<p><small>Received <%= time_ago_in_words @enquiry.created_at %> ago</small></p>
+<hr>
+
+<%= link_to "Back to enquiries", enquiries_path, class: "default" %>

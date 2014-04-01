@@ -1,6 +1,11 @@
 <h2>Dashboard</h2>
-<p><%= current_user.email %><p>
-<p><%= link_to "Edit account", edit_user_registration_path(current_user) %></p>
+<p><%= link_to "Edit your account", edit_user_registration_path(current_user) %></p>
 <hr class="colorgraph">
 
-<%= link_to "User management", users_path, class: "btn btn-default bt-large" %>
+<h3><i class="fa fa-envelope-o"></i> Enquiries</h3>
+<p><%= link_to "View all", enquiries_path, class: "btn btn-default bt-large" %></p>
+<hr class="colorgraph">
+
+<h3><i class="fa fa-users"></i> Users</h3>
+<p><%= link_to "Create new user", new_user_path, class: "btn btn-default bt-large" %>
+<%= link_to "View all", users_path, class: "btn btn-default bt-large" %></p>

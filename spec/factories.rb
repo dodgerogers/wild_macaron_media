@@ -7,4 +7,11 @@ FactoryGirl.define do
     u.password_confirmation "Password123"
     u.admin true
   end
+  
+  factory :enquiry do |u|
+    u.sequence(:email) {|n| "test#{n}@gmail.com" }
+    u.name "Thadius"
+    u.message "What are your prices for digital magazines"
+    u.replied false
+  end
 end

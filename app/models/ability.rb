@@ -6,6 +6,7 @@ class Ability
     if user.admin?
       can :manage, :all
     else
+      can [:new, :create], Enquiry
       cannot :manage, User
     end
     # Define abilities for the passed in user here. For example:

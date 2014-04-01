@@ -4,12 +4,25 @@
 html, body {
 	font-family: $lucida;
 }
+
+// custom font size, colors etc
+
+.green {
+	color: $green;
+}
+.red {
+	color: $red;
+}
+
 footer {
+	a {
+		color: $gundam;
+	}
 	&#homepage {
-		min-height:250px;
 		background: #333;
 		color: $ice;
-		@extend .main-section;
+		@include box-sizing(border-box);
+		height:250px;
 		.container {
 			padding-top: 20px;
 		}
@@ -76,5 +89,10 @@ footer {
   background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+// errors
+#error_explanation {
+	margin: 15px auto;
 }
 
