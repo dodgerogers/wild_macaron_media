@@ -6,7 +6,7 @@ $(function(){
 			$("#services-dropdown").fadeIn();
 			$("body, html").animate({
 				scrollTop: $("#wmm-carousel").offset().top - ( $(window).height() / 4 )
-			}, 1000);
+			}, 500);
 		}
 	});
 });

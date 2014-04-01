@@ -1,8 +1,14 @@
-<footer>
+<footer id="homepage">
 	<div class="container">
 		<center>
 			&copy; Wild Macaron Media<br>
-			<small>All Rights Reserved</small>
+			<small>All Rights Reserved</small><br>
+			<% if current_user %>
+				<small><%= link_to "Dashboard", dashboard_path %></small><br>
+				<small><%= link_to "logout", destroy_user_session_path, method: :delete %></small>
+			<% else %>
+				<small><%= link_to "Login", new_user_session_path %></small>
+			<% end %>	
 		</center>
 	</div>
 </footer>
