@@ -129,6 +129,13 @@
         null,
         null
       ],
+      "/Users/andrew/rails/wild_macaron/app/models/enquiry.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/andrew/rails/wild_macaron/app/models/ability.rb": [
         1,
         1,
@@ -170,14 +177,19 @@
         null,
         null
       ],
-      "/Users/andrew/rails/wild_macaron/app/models/enquiry.rb": [
+      "/Users/andrew/rails/wild_macaron/app/controllers/errors_controller.rb": [
+        1,
+        null,
         1,
         1,
         1,
+        2,
         1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1396393267
+    "timestamp": 1396467346
   }
 }

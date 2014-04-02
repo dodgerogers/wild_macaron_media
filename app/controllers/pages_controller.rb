@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   authorize_resource class: false, except: :home
   
   def home
-    render layout: "homepage"
+    render layout: "home"
   end
   
   def dashboard

@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-01T19:01:07-04:00">2014-04-01T19:01:07-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-02T15:35:46-04:00">2014-04-02T15:35:46-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.22
+         2.12
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>9</b> files in total.
-    <b>74</b> relevant lines. 
-    <span class="green"><b>74</b> lines covered</span> and
+    <b>10</b> files in total.
+    <b>80</b> relevant lines. 
+    <span class="green"><b>80</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -68,6 +68,16 @@
         <td>23</td>
         <td>0</td>
         <td>3.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bd4435a9236baa9bd4c0ba72ba096047c183a9c0" class="src_link" title="app/controllers/errors_controller.rb">app/controllers/errors_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -153,15 +163,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.13
+         1.94
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
-    <b>4</b> files in total.
-    <b>54</b> relevant lines. 
-    <span class="green"><b>54</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>60</b> relevant lines. 
+    <span class="green"><b>60</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -196,6 +206,16 @@
         <td>23</td>
         <td>0</td>
         <td>3.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bd4435a9236baa9bd4c0ba72ba096047c183a9c0" class="src_link" title="app/controllers/errors_controller.rb">app/controllers/errors_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -840,6 +860,84 @@
   </pre>
 </div>
       
+        <div class="source_table" id="bd4435a9236baa9bd4c0ba72ba096047c183a9c0">
+  <div class="header">
+    <h3>app/controllers/errors_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ErrorsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @exception = env[&quot;action_dispatch.exception&quot;]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      format.html { render action: request.path[1..-1] }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      format.json { render json: { status: request.path[1..-1], error: @exception.message}  }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="17d3ec833efe22250b3d1b8f3a199856f1a55079">
   <div class="header">
     <h3>app/controllers/pages_controller.rb</h3>
@@ -881,7 +979,7 @@
         <li class="covered" data-hits="4" data-linenumber="5">
           <span class="hits">4</span>
           
-          <code class="ruby">    render layout: &quot;homepage&quot;</code>
+          <code class="ruby">    render layout: &quot;home&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">

@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<h1>The change you wanted was rejected.</h1>
+		<hr class="colorgraph-dark">
+		<% if @exception %>
+		  <p><%= @exception.message %></p>
+		<% else %>
+		  <p>Maybe you tried to change something you didn't have access to.</p>
+		<% end %>
+		<%= link_to raw('<i class="fa fa-home"></i> Home'), root_path %>
+	</div>
+</div>		

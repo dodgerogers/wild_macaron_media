@@ -5,6 +5,8 @@ WildMacaron::Application.routes.draw do
     put 'users', to: 'devise/registrations#update', as: :user_registration
   end
   
+  get "(errors)/:status", to: 'errors#show', constraints: { status: /\d{3}/ }
+  
   resources :users, only: [:index, :destroy, :create, :new]
   resources :enquiries do
     member { put :replied }
