@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-02T15:35:46-04:00">2014-04-02T15:35:46-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-03T16:00:17-04:00">2014-04-03T16:00:17-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.12
+         2.97
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>10</b> files in total.
-    <b>80</b> relevant lines. 
-    <span class="green"><b>80</b> lines covered</span> and
+    <b>11</b> files in total.
+    <b>90</b> relevant lines. 
+    <span class="green"><b>90</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -108,6 +108,16 @@
         <td>1</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#97d460ba496b44ccb5daf54cf9f6aacb934907a7" class="src_link" title="app/helpers/meta_helper.rb">app/helpers/meta_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>11.5</td>
       </tr>
       
       <tr>
@@ -363,16 +373,16 @@
     (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="green">
+         6.25
        </span>
     </span> hits/line)
   </h2>
   <a name="Helpers"></a>
   <div>
-    <b>1</b> files in total.
-    <b>1</b> relevant lines. 
-    <span class="green"><b>1</b> lines covered</span> and
+    <b>2</b> files in total.
+    <b>11</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -397,6 +407,16 @@
         <td>1</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#97d460ba496b44ccb5daf54cf9f6aacb934907a7" class="src_link" title="app/helpers/meta_helper.rb">app/helpers/meta_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>11.5</td>
       </tr>
       
     </tbody>
@@ -979,7 +999,7 @@
         <li class="covered" data-hits="4" data-linenumber="5">
           <span class="hits">4</span>
           
-          <code class="ruby">    render layout: &quot;home&quot;</code>
+          <code class="ruby">    render layout: &quot;front&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
@@ -1247,6 +1267,132 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="97d460ba496b44ccb5daf54cf9f6aacb934907a7">
+  <div class="header">
+    <h3>app/helpers/meta_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module MetaHelper</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def meta_title(title=nil)</code>
+        </li>
+      
+        <li class="covered" data-hits="20" data-linenumber="3">
+          <span class="hits">20</span>
+          
+          <code class="ruby">    meta_builder(:title, title) { content_for(:title) + &quot; | &quot; + META[&#39;title&#39;] }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def meta_keywords(keywords=nil)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    meta_builder(:keywords, keywords) { [content_for(:keywords), META[&quot;keywords&quot;]].join(&quot;, &quot;) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def meta_description(description=nil)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    meta_builder(:description, description) { content_for(:description) + &quot;. &quot; + META[&#39;description&#39;]  }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def meta_builder(attribute, text)</code>
+        </li>
+      
+        <li class="covered" data-hits="34" data-linenumber="15">
+          <span class="hits">34</span>
+          
+          <code class="ruby">    content_for(attribute, text) if text</code>
+        </li>
+      
+        <li class="covered" data-hits="34" data-linenumber="16">
+          <span class="hits">34</span>
+          
+          <code class="ruby">    content_for?(attribute) ? (yield if block_given?) : META[&quot;#{attribute.to_s}&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>

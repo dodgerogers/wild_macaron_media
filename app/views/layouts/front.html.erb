@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Shared head information because we have 2 layouts -->
 		<%= render template: "layouts/head" %>
 	</head>
 	<body>
 		<div id="wrap">
 			<%= render template: "layouts/navbar" %>
-			<div class="container">
-				<%= render partial: "shared/errors" %>
-				<%= yield %>
-			</div>
+			<%= render partial: "shared/errors" %>
+			<%= yield %>
 			<div id="footer-push"></div>
 		</div>
 		<%= render template: "layouts/footer" %>

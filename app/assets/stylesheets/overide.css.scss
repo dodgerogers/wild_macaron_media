@@ -8,6 +8,24 @@
 // Navbar
 .navbar {
 	margin-bottom: 0px;
+	background: #fff;
+	.container-fluid {
+		max-width:1170px;
+	}
+}
+
+// Carousel
+.carousel-indicators {
+	width:100%;
+	position:relative;
+	left: auto;
+	bottom: auto;
+	right: auto;
+	margin: 10px auto 20px;
+	li {
+		border: 1px solid #eee;
+		background-color: #eee;
+	}
 }
 
 // Icons
